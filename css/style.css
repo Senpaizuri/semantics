@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Nexa Book;
+}
+
+article{
+  max-width: 90vw;
+  margin:auto;
+  background-color: salmon;
+}
+section{
+  font-size: 1.5em;
+}
+.data{
+  width: 90vw;
+  display: flex;
+  background-color: white;
+}
+.data>*{
+  flex-basis: 33%;
+  text-align: center;
+}
+.text{
+  padding: 2em;
+}
+
+@media screen and (min-width:30em) {
+  .data{
+    float: right;
+    flex-direction: column;
+    width: auto;
+    background-color: gray;
+  }
+}

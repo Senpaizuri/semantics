@@ -3,64 +3,78 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
     <title>Read On</title>
   </head>
   <body>
-    <header>
-      <img src="http://www.placecage.com/100/100" alt="Logo"/>
-      <h1>Transavia</h1>
-      <nav>
+    <main id="Slidables">
+      <header>
+        <div id="homeReturn"></div>
+        <div id="home"></div>
+        <nav>
+          <ul>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Verhalen</a></li>
+            <li><a href="#">Uitloggen</a></li>
+          </ul>
+        </nav>
+        <img src="img/transavia-logo.svg" alt="Logo"/>
+      </header>
+      <section class="container">
+        <form class="" action="overzicht.html" method="post">
+          <fieldset id="aanmelden">
+            <legend>Nog geen account?</legend>
+            <input type="button" name="name" value=" Aanmaken " id="createAcc">
+            <label for="" >Voornaam* <br>
+              <input type="field" name="name" placeholder="Jhon" required>
+            </label>
+            <label for="" >Tussenvoegsels <br>
+              <input type="field" name="name" placeholder="V.d.">
+            </label>
+            <label for="" >Achternaam*<br>
+              <input type="field" name="name" placeholder="Doe" required>
+            </label>
+            <label for="" >Leeftijd* <br>
+              <input type="number" name="quantity" min="1" max="100" placeholder="23" required>
+            </label>
+            <label for="" >Email* <br>
+              <input type="email" name="name" placeholder="Example@email.com" required>
+            </label>
+            <label for="" >Straatnaam* <br>
+              <input type="field" name="name" placeholder="1st Ave" required>
+            </label>
+            <label for="" >Postcode* <br>
+              <input type="field" name="name" placeholder="1234AB" required>
+            </label>
+            <label for="" >Huisnummer* <br>
+              <input type="field" name="name" placeholder="123" required=>
+            </label>
+            <label for="" >Telefoonnummer* <br>
+              <input type="field" name="name" placeholder="06-12345678" required>
+            </label>
+            <button type="submit" name="button" id="submit">Account Aanmaken</button>
+          </fieldset>
+          <fieldset id="login">
+            <div class="top-pane"></div>
+            <legend>Login</legend>
+            <input type="field" name="name" placeholder="Username of Email">
+            <input type="password" name="name" placeholder="Wachtwoord" password="true"><br>
+            <a href="#">Wachtwoord vergeten?</a>
+            <input type="button" name="name" value=" Inloggen ">
+            <div class="bottom-pane"></div>
+          </fieldset>
+        </form>
+      </section>
+      <footer>
+        <address>Copyright (c) 2016 Copyright Holder All Rights Reserved.</address>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         <ul>
-          <li><a href='#'>home</a></li>
-          <li><a href='#'>verhalen</a></li>
-          <li><a href='#'>account</a></li>
-          <li><a href="#">login</a></li>
+          <li><a href="#">sitemap</a></li>
         </ul>
-      </nav>
-    </header>
-    <form class="" action="index.html" method="post">
-      <fieldset>
-        <legend>Aanmelden</legend>
-        <label for="">Naam
-          <input type="field" name="name" placeholder="Jhon"><br>
-        </label>
-        <label for="">Tussenvoegsels
-          <input type="field" name="name" placeholder="V.d.">
-        </label>
-        <label for="">Achternaam
-          <input type="field" name="name" placeholder="Doe"><br>
-        </label>
-        <label for="">Leeftijd
-          <input type="number" name="quantity" min="1" max="100" placeholder="1-100">
-        </label>
-        <label for="">Email
-          <input type="email" name="name" placeholder="Example@email.com"><br>
-        </label>
-        <label for="">Straatnaam
-          <input type="field" name="name" placeholder="1st Ave">
-        </label>
-        <label for="">Postcode
-          <input type="field" name="name" placeholder="1234AB">
-        </label>
-        <label for="">Huisnummer
-          <input type="field" name="name" placeholder="123">
-        </label>
-        <label for="">Telefoonnummer
-          <input type="field" name="name" placeholder="06-12345678">
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Login</legend>
-        <input type="field" name="name" placeholder="Username of Email"><br>
-        <input type="password" name="name" placeholder="Wachtwoord" password="true">
-        <a href="#">Wachtwoord vergeten?</a>
-      </fieldset>
-    </form>
-    <footer>
-      <address>Copyright (c) 2016 Copyright Holder All Rights Reserved.</address>
-      <ul>
-        <li><a href="#">sitemap</a></li>
-      </ul>
-    </footer>
+        <img id="bottom-logo" src="img/transavia-logo.svg" alt="Logo"/>
+      </footer>
+    </main>
   </body>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/expand.js"></script>
 </html>
