@@ -11,7 +11,7 @@ for (var i = 0; i < tiles.length; i++) {
   var newImg = document.createElement('img');
   var newFigCap = document.createElement('figcaption');
   var newH1 = document.createElement('h1');
-  var newH2 = document.createElement('h2w')
+  var newH2 = document.createElement('h2')
   var newPar = document.createElement('p');
   var newButton = document.createElement('button');
 
